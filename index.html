@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Projecting Points to Axes: Oriented Object Detection via Point-Axis Representation.">
+  <meta name="keywords" content="PAP">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projecting Points to Axes: Oriented Object Detection via Point-Axis Representation</title>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <!-- Fonts and CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <!-- JS Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Projecting Points to Axes: Oriented Object Detection via Point-Axis Representation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://scholar.google.com.hk/citations?user=jlDQUOkAAAAJ&hl=zh-CN&oi=ao">Zeyang Zhao</a><sup>1</sup>,</span>
+            <span class="author-block">
+              Qilong Xue</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com.hk/citations?user=9VCIiVcAAAAJ&hl=zh-CN">Yuhang He</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com.hk/citations?user=JdQnaesAAAAJ&hl=zh-CN">Yifan Bai</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://scholar.google.com.hk/citations?user=KNyC5EUAAAAJ&hl=zh-CN">Xing Wei</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com.hk/citations?user=x2xdU7gAAAAJ&hl=zh-CN">Yihong Gong</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>University of Xian Jiaotong</span>
+          </div>
+
+          <div class="column has-text-centered" style="padding-bottom: 0; margin-bottom: 0;">
+            <div class="publication-links" style="padding-bottom: 0; margin-bottom: 0;">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2407.08489"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/zhaozeyang108/Oriented-DETR"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>        
+
+              <!-- 图片部分 -->
+              <img src="./static/images_zzy/Abstract.jpg" alt="Figure" style="max-width: 90%; height: auto; margin-top: 20px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Abstract Section -->
+<section class="section" style="margin-top: -50px;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+             <p>
+This paper introduces the point-axis representation for oriented object detection, as depicted in aerial images in Figure~\ref{intro_vis}, emphasizing its flexibility and geometrically intuitive nature with two key components: points and axes. 1) <strong>Points</strong> delineate the spatial extent and contours of objects, providing detailed shape descriptions. 2) <strong>Axes</strong> define the primary directionalities of objects, providing essential orientation cues crucial for precise detection. The point-axis representation decouples location and rotation, addressing the loss discontinuity issues commonly encountered in traditional bounding box-based approaches. For effective optimization without introducing additional annotations, we propose the max-projection loss to supervise point set learning and the cross-axis loss for robust axis representation learning. Further, leveraging this representation, we present the Oriented DETR model, seamlessly integrating the DETR framework for precise point-axis prediction and end-to-end detection. Experimental results demonstrate significant performance improvements in oriented object detection tasks.
+          </p>
+          <p>
+<strong>Keywords:</strong> Oriented Object Detection, Aerial Object Detection, Point-Axis Representation, Detection Transformer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Challenges Section -->
+<section class="section" style="margin-top: -60px;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-3">Challenges in Contemporary Representation Techniques</h2>
+        <img src="./static/images_zzy/Challenges.jpg" alt="Figure" style="margin: 0 auto; max-width: 100%; height: auto;">
+        <ol style="list-style-type: '*';">
+    <li>Angle-based methods encounter abrupt changes in angle definitions.</li>
+    <li>Quadrilateral-based methods struggle with sudden shifts in offset definitions.</li>
+    <li>Gaussian distribution-based methods face the "square" problem.</li>
+    <li>Point set-based methods often overlook the primary directionalities.</li>
+</ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Algorithm Section -->
+<section class="section" style="margin-top: -50px;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-3">A Novel Point-Axis Representation</h2>
+        <img src="./static/images_zzy/PARep.jpg" alt="Figure" style="max-width: 100%; height: auto;">
+        <ol style="list-style-type: '*';">
+          <li>In the point-axis representation, each oriented object is defined by a combination of a set of points and an axis representation. Point-axis representation effectively disentangles location and rotation, which prevents abrupt changesat boundaries.</li>
+          <li>We propose the max-projection loss to supervise point set learning and the cross-axis loss for axis learning without introducing additional annotations.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="margin-top: -50px;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-3">Oriented DETR Model</h2>
+        <img src="./static/images_zzy/Model.jpg" alt="Figure" style="max-width: 95%; height: auto;">
+        <ol style="list-style-type: '*';">
+          <li>We extend the Detection Transformer (DETR) framework with point-axis prediction for detecting oriented objects.</li>
+          <li>Oriented DETR introduces conditioned point queries and a points detection decoder for points prediction.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Evaluation Section -->
+<section class="section"  style="margin-top: -50px;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column">
+        <h2 class="title is-3">Visualization</h2>
+        <h3 class="title is-4">Image</h3>
+        <h4 class="title is-5" style="margin-top: 30px;">Remote Sensing</h4>
+        <img src="./static/images_zzy/RS.jpg" alt="Figure" style="max-width: 100%; height: auto;">
+        <h4 class="title is-5" style="margin-top: 30px;">Text Spotting</h4>
+        <img src="./static/images_zzy/Text.jpg" alt="Figure" style="max-width: 100%; height: auto;">
+        <h3 class="title is-4">Video</h3>
+        <div style="display: flex; justify-content: space-around; align-items: center;">
+          <!-- 我们的方法 -->
+          <div style="text-align: center;">
+            <video width="480" height="400" controls>
+              <source src="./static/images_zzy/others.mp4" type="video/mp4">
+            </video>
+            <p><strong>Previous Methods Based on Rotated Bounding Box</strong></p>
+          </div>
+          <!-- 别人的方法 -->
+          <div style="text-align: center;">
+            <video width="480" height="400" controls>
+              <source src="./static/images_zzy/ours.mp4" type="video/mp4">
+            </video>
+            <p><strong>Oriented DETR via Point-Axis Representation</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BibTeX Section -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{zhao2024projecting,
+  title={Projecting Points to Axes: Oriented Object Detection via Point-Axis Representation},
+  author={Zhao, Zeyang and Xue, Qilong and He, Yuhang and Bai, Yifan and Wei, Xing and Gong, Yihong},
+  journal={arXiv preprint arXiv:2407.08489},
+  year={2024}
+},</code></pre>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>We would like to acknowledge that the template for this website is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">nerfies.github.io</a>. We appreciate their sharing and open-source contribution.</p>
+          <p>For more details, please refer to our paper or contact us at zeyang@stu.xjtu.edu.cn.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
